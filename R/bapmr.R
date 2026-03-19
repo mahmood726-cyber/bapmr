@@ -34,6 +34,7 @@
 #' cat("BAP-MR R2_het:", result$R2_het, "%\n")
 #' }
 #'
+#' @importFrom stats var coef
 #' @export
 bapmr <- function(y, v, X, B = 100, alpha = 1, seed = NULL) {
   if (!requireNamespace("glmnet", quietly = TRUE)) {
