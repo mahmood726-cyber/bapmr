@@ -1,0 +1,11 @@
+^\.Rproj\.user$
+^.*\.Rproj$
+^renv$
+^renv\.lock$
+^manuscript_.*\.Rmd$
+^fig.*\.pdf$
+^results_.*\.csv$
+^regulariz.*\.csv$
+^simulation_.*\.csv$
+^\.Rhistory$
+^\.RData$

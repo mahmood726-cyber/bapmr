@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Rplots.pdf
+doc/
+Meta/
+inst/doc
+*.o
+*.so
+*.dll
+*.tar.gz
+.Rprofile

@@ -1,0 +1,6 @@
+"Dataset","k","p_eff","k/p","I2","Standard_R2","Standard_CV","LASSO_R2","LASSO_CV","Ridge_R2","Ridge_CV","LASSO_n","LASSO_vars","lambda_choice","Opt_Std","Opt_LASSO","Opt_Ridge"
+"BCG",13,3,4.3,92.2,64.6,21,70.2,19.2,70.1,39.7,1,"ablat","lambda.min",43.7,51,30.4
+"Teacher",19,2,9.5,41.9,40.6,35.7,93.1,42.2,91,44.6,1,"weeks","lambda.min",4.9,50.9,46.4
+"Konstantopoulos",56,2,28,94.7,0,6.9,12.6,5.2,12.7,7.9,0,"","lambda.min",-6.9,7.5,4.8
+"Berkey",10,2,5,98.3,0,0,10.4,0,10.4,0,0,"","lambda.min",0,10.4,10.4
+"Hackshaw",37,1,37,29.6,0,0,0,0,0,0,0,"","lambda.min",0,0,0
