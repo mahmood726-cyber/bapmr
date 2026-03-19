@@ -31,7 +31,7 @@ Suggests:
     knitr,
     rmarkdown
 Config/testthat/edition: 3
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 VignetteBuilder: knitr
 URL: https://github.com/mahmood726-cyber/bapmr
 BugReports: https://github.com/mahmood726-cyber/bapmr/issues
