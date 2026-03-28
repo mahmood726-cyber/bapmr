@@ -1,0 +1,96 @@
+{
+  "title": "Bootstrap-Aggregated Penalized Meta-Regression for Small-Sample Evidence Synthesis",
+  "slug": "bapmr-regularization-paradox",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "body": "Can bootstrap aggregation resolve the regularization paradox whereby LASSO increases overfitting in small-sample meta-regression settings? We developed BAP-MR using five benchmark datasets from the metadat R package including BCG vaccination, Berkey periodontal, and Konstantopoulos multi-site trials with study counts from ten to forty-one. The method applies LASSO across bootstrap resamples of the meta-analytic dataset and averages the resulting penalized coefficients and heterogeneity estimates to stabilize lambda selection. In null simulations with ten studies and two moderators, standard LASSO produced 30.6 percent mean optimism while BAP-MR suppressed optimism to 8.2 percent, outperforming unpenalized restricted maximum likelihood at 13.0 percent. Across all five empirical datasets, BAP-MR consistently delivered the most conservative R-squared-het estimates and resisted spurious moderator discovery plaguing single-pass penalization. Bagging the penalization process provides a principled solution to unstable cross-validation in small-sample evidence synthesis. The limitation of bootstrap resampling is that performance may degrade with extremely small study counts below eight where resamples become insufficiently diverse.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Can bootstrap aggregation resolve the regularization paradox whereby LASSO increases overfitting in small-sample meta-regression settings?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We developed BAP-MR using five benchmark datasets from the metadat R package including BCG vaccination, Berkey periodontal, and Konstantopoulos multi-site trials with study counts from ten to forty-one."
+    },
+    {
+      "role": "Method",
+      "text": "The method applies LASSO across bootstrap resamples of the meta-analytic dataset and averages the resulting penalized coefficients and heterogeneity estimates to stabilize lambda selection."
+    },
+    {
+      "role": "Primary result",
+      "text": "In null simulations with ten studies and two moderators, standard LASSO produced 30.6 percent mean optimism while BAP-MR suppressed optimism to 8.2 percent, outperforming unpenalized restricted maximum likelihood at 13.0 percent."
+    },
+    {
+      "role": "Robustness",
+      "text": "Across all five empirical datasets, BAP-MR consistently delivered the most conservative R-squared-het estimates and resisted spurious moderator discovery plaguing single-pass penalization."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Bagging the penalization process provides a principled solution to unstable cross-validation in small-sample evidence synthesis."
+    },
+    {
+      "role": "Boundary",
+      "text": "The limitation of bootstrap resampling is that performance may degrade with extremely small study counts below eight where resamples become insufficiently diverse."
+    }
+  ],
+  "notes": {
+    "app": "bapmr R package v0.1.0",
+    "data": "BCG, Berkey, Hackshaw, Konstantopoulos, Teacher datasets from metadat",
+    "code": "https://github.com/mahmood726-cyber/bapmr",
+    "doi": "",
+    "version": "0.1.0",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "type": "methods",
+  "primary_estimand": "R-squared heterogeneity",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": false,
+        "detail": "Sentence 4 should include a confidence interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": false,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": true,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}

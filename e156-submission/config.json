@@ -1,0 +1,57 @@
+{
+  "title": "Bootstrap-Aggregated Penalized Meta-Regression for Small-Sample Evidence Synthesis",
+  "slug": "bapmr-regularization-paradox",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "path": "C:\\Projects\\Paper1",
+  "type": "methods",
+  "primary_estimand": "R-squared heterogeneity",
+  "summary": "BAP-MR resolves the regularization paradox where LASSO increases overfitting in small meta-regressions by averaging penalized coefficients across bootstrap resamples.",
+  "body": "Can bootstrap aggregation resolve the regularization paradox whereby LASSO increases overfitting in small-sample meta-regression settings? We developed BAP-MR using five benchmark datasets from the metadat R package including BCG vaccination, Berkey periodontal, and Konstantopoulos multi-site trials with study counts from ten to forty-one. The method applies LASSO across bootstrap resamples of the meta-analytic dataset and averages the resulting penalized coefficients and heterogeneity estimates to stabilize lambda selection. In null simulations with ten studies and two moderators, standard LASSO produced 30.6 percent mean optimism while BAP-MR suppressed optimism to 8.2 percent, outperforming unpenalized restricted maximum likelihood at 13.0 percent. Across all five empirical datasets, BAP-MR consistently delivered the most conservative R-squared-het estimates and resisted spurious moderator discovery plaguing single-pass penalization. Bagging the penalization process provides a principled solution to unstable cross-validation in small-sample evidence synthesis. The limitation of bootstrap resampling is that performance may degrade with extremely small study counts below eight where resamples become insufficiently diverse.",
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Can bootstrap aggregation resolve the regularization paradox whereby LASSO increases overfitting in small-sample meta-regression settings?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We developed BAP-MR using five benchmark datasets from the metadat R package including BCG vaccination, Berkey periodontal, and Konstantopoulos multi-site trials with study counts from ten to forty-one."
+    },
+    {
+      "role": "Method",
+      "text": "The method applies LASSO across bootstrap resamples of the meta-analytic dataset and averages the resulting penalized coefficients and heterogeneity estimates to stabilize lambda selection."
+    },
+    {
+      "role": "Primary result",
+      "text": "In null simulations with ten studies and two moderators, standard LASSO produced 30.6 percent mean optimism while BAP-MR suppressed optimism to 8.2 percent, outperforming unpenalized restricted maximum likelihood at 13.0 percent."
+    },
+    {
+      "role": "Robustness",
+      "text": "Across all five empirical datasets, BAP-MR consistently delivered the most conservative R-squared-het estimates and resisted spurious moderator discovery plaguing single-pass penalization."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Bagging the penalization process provides a principled solution to unstable cross-validation in small-sample evidence synthesis."
+    },
+    {
+      "role": "Boundary",
+      "text": "The limitation of bootstrap resampling is that performance may degrade with extremely small study counts below eight where resamples become insufficiently diverse."
+    }
+  ],
+  "notes": {
+    "app": "bapmr R package v0.1.0",
+    "data": "BCG, Berkey, Hackshaw, Konstantopoulos, Teacher datasets from metadat",
+    "code": "https://github.com/mahmood726-cyber/bapmr",
+    "doi": "",
+    "version": "0.1.0",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "affiliation": "Tahir Heart Institute",
+  "email": "mahmood.ahmad2@nhs.net",
+  "references": [
+    "Viechtbauer W. Conducting meta-analyses in R with the metafor package. J Stat Softw. 2010;36(3):1-48.",
+    "Schwarzer G, Carpenter JR, Rucker G. Meta-Analysis with R. Springer; 2015.",
+    "Borenstein M, Hedges LV, Higgins JPT, Rothstein HR. Introduction to Meta-Analysis. 2nd ed. Wiley; 2021."
+  ]
+}
