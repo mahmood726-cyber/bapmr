@@ -3,7 +3,7 @@
   "slug": "bapmr-regularization-paradox",
   "author": "Mahmood Ahmad",
   "date": "2026-03-26",
-  "path": "C:\\Projects\\Paper1",
+  "path": "C:\\Models\\bapmr",
   "type": "methods",
   "primary_estimand": "R-squared heterogeneity",
   "summary": "BAP-MR resolves the regularization paradox where LASSO increases overfitting in small meta-regressions by averaging penalized coefficients across bootstrap resamples.",
